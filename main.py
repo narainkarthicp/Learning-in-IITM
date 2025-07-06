@@ -1,16 +1,22 @@
-# This is a sample Python script.
+# ToDo: I need formal understanding of class and object.
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+class my_class: #class name
+    x = 10 # property (or) attributes
+
+# creating an object for the class
+p1 = my_class() # why I'm using () ? // it's special kind of __init__() it will call automatically -> ()
+print(p1.x) # will print the value of x in the class
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
 
+class Person:
+  def __init__(self):
+    self.name = 34
+    self.age = 34
+  def display(self):
+      print(self.name, self.age,"Yeah it's printed !! ")
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+p1 = Person()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(p1.name)
+print(p1.age)
