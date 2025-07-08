@@ -10,13 +10,18 @@ print(p1.x) # will print the value of x in the class
 
 
 class Person:
-  def __init__(self):
-    self.name = 34
-    self.age = 34
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
   def display(self):
       print(self.name, self.age,"Yeah it's printed !! ")
 
-p1 = Person()
+  def __str__(self):
+      return f"{self.name}({self.age})"
 
-print(p1.name)
-print(p1.age)
+p1 = Person("kumar",34)
+p1.display()
+
+# print(p1.name)
+# print(p1.age)
